@@ -1,20 +1,22 @@
 {
   "name": "sudocode-balance",
-  "version": "0.1.0",
-  "description": "在 Codex 中查询你的 SudoCode 账户余额。",
+  "version": "0.1.0+codex.20260624224209",
+  "description": "按用户明确请求，在 Codex 中查询你的 SudoCode 账户余额。",
   "author": {
     "name": "SudoCode"
   },
   "interface": {
     "displayName": "SudoCode Balance",
-    "shortDescription": "在 Codex 中查看 SudoCode 余额。",
-    "longDescription": "通过只读 MCP 工具连接 SudoCode，返回账户级钱包余额、套餐余额和总余额。插件不能创建 Key、扣费、充值或管理账户。",
+    "shortDescription": "按明确请求查看 SudoCode 余额。",
+    "longDescription": "仅当用户明确要求查询 SudoCode 账户余额、钱包余额、套餐余额或总余额时使用。通过只读 MCP 工具连接 SudoCode，返回账户级钱包余额、套餐余额和总余额。不要用于充值、扣费、API Key、账户管理、套餐购买建议或普通编程请求。插件不能创建 Key、扣费、充值或管理账户。",
     "developerName": "SudoCode",
     "category": "Productivity",
     "capabilities": [
       "mcp"
     ],
-    "defaultPrompt": "查询我的 SudoCode 余额。",
+    "defaultPrompt": [
+      "查询我的 SudoCode 余额。"
+    ],
     "brandColor": "#8B5CF6",
     "composerIcon": "./assets/logo.svg",
     "logo": "./assets/logo.svg"

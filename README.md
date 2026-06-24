@@ -2,10 +2,10 @@
 
 ![SudoCode Logo](plugins/sudocode-balance/assets/logo.svg)
 
-在 Codex 中查询你的 SudoCode 账户余额。插件通过只读 MCP 工具连接
+按你的明确请求，在 Codex 中查询你的 SudoCode 账户余额。插件通过只读 MCP 工具连接
 `https://api.sudocode.chat/mcp`，返回账户级钱包余额、套餐余额和总余额。
 
-插件不会创建 API Key，不会扣费，不会充值，也不会管理账户。
+插件不会创建 API Key，不会扣费，不会充值，也不会管理账户。它不会后台定时查询，也不应该因为普通 SudoCode 或编程请求自动查询余额。
 
 ## 安装
 
@@ -30,6 +30,8 @@ codex mcp login sudocode-balance
 ```
 
 Codex 会打开浏览器，进入 `https://api.sudocode.chat`。用你的 SudoCode 账号密码登录并确认授权。
+
+登录只是授权，不会触发余额查询。只有当你明确询问 SudoCode 余额、剩余额度、钱包余额、套餐余额或总余额时，Codex 才会调用只读余额工具。
 
 登录成功后，新开一个 Codex 会话，然后问：
 
@@ -80,7 +82,7 @@ MCP startup incomplete (failed: sudocode-balance)
 
 正常情况下只需要登录一次。
 
-SudoCode 会签发一个永久但可撤销的 bearer token。之后 Codex 会自动使用这个 token 调用余额工具，不需要每次输入账号密码。
+SudoCode 会签发一个永久但可撤销的 bearer token。之后，只有当你明确要求查询 SudoCode 余额时，Codex 才会在该请求中使用这个 token 调用只读余额工具；不会后台定时查询，也不会因普通 SudoCode 或编程请求自动查余额。
 
 以下情况需要重新登录：
 
