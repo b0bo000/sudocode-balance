@@ -1,0 +1,20 @@
+{
+  "name": "sudocode",
+  "interface": {
+    "displayName": "SudoCode"
+  },
+  "plugins": [
+    {
+      "name": "sudocode-balance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sudocode-balance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

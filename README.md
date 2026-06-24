@@ -2,6 +2,21 @@
 
 Read your SudoCode account balance from Codex through a read-only remote MCP server.
 
+## Install
+
+```bash
+codex plugin marketplace add b0bo000/sudocode-balance --ref main
+codex plugin add sudocode-balance@sudocode
+```
+
+Start a new Codex thread after installing, then ask:
+
+```text
+Check my SudoCode balance.
+```
+
+Codex will open the SudoCode OAuth authorization flow the first time the plugin is used.
+
 ## What It Does
 
 This plugin connects Codex to:
@@ -31,6 +46,7 @@ Users sign in on the API domain and authorize a permanent, revocable bearer toke
 ## Files
 
 ```text
-.codex-plugin/plugin.json
-.mcp.json
+.agents/plugins/marketplace.json
+plugins/sudocode-balance/.codex-plugin/plugin.json
+plugins/sudocode-balance/.mcp.json
 ```
