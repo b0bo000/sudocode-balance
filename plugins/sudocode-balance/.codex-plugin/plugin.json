@@ -1,21 +1,21 @@
 {
   "name": "sudocode-balance",
-  "version": "0.1.0+codex.20260624224209",
-  "description": "按用户明确请求，在 Codex 中查询你的 SudoCode 账户余额。",
+  "version": "0.1.0+codex.20260624234829",
+  "description": "\u6309\u7528\u6237\u660e\u786e\u8bf7\u6c42\uff0c\u901a\u8fc7\u53ea\u8bfb MCP \u67e5\u8be2 SudoCode \u8d26\u6237\u4f59\u989d\u3002",
   "author": {
     "name": "SudoCode"
   },
   "interface": {
     "displayName": "SudoCode Balance",
-    "shortDescription": "按明确请求查看 SudoCode 余额。",
-    "longDescription": "仅当用户明确要求查询 SudoCode 账户余额、钱包余额、套餐余额或总余额时使用。通过只读 MCP 工具连接 SudoCode，返回账户级钱包余额、套餐余额和总余额。不要用于充值、扣费、API Key、账户管理、套餐购买建议或普通编程请求。插件不能创建 Key、扣费、充值或管理账户。",
+    "shortDescription": "\u6309\u660e\u786e\u8bf7\u6c42\u67e5\u770b SudoCode \u4f59\u989d\u3002",
+    "longDescription": "\u4ec5\u5f53\u7528\u6237\u660e\u786e\u8981\u6c42\u67e5\u8be2\u81ea\u5df1\u7684 SudoCode \u8d26\u6237\u4f59\u989d\u3001\u94b1\u5305\u4f59\u989d\u3001\u5957\u9910\u4f59\u989d\u6216\u603b\u4f59\u989d\u65f6\u4f7f\u7528\u3002\u7528\u6237\u8bf4\u4e0d\u8981\u67e5\u4f59\u989d\u3001\u4e0d\u7528\u67e5\u4f59\u989d\u3001\u5148\u522b\u67e5\u4f59\u989d\uff0c\u6216\u53ea\u662f\u8ba8\u8bba SudoCode\u3001Codex\u3001Claude Code\u3001Hermes\u3001MCP \u914d\u7f6e\u3001\u767b\u5f55\u3001\u5145\u503c\u3001\u4ef7\u683c\u3001API Key\u3001\u8d26\u6237\u7ba1\u7406\u3001\u5957\u9910\u8d2d\u4e70\u5efa\u8bae\u3001\u666e\u901a\u7f16\u7a0b\u4efb\u52a1\u65f6\uff0c\u4e0d\u8981\u8c03\u7528\u4f59\u989d\u5de5\u5177\u3002\u610f\u56fe\u4e0d\u660e\u786e\u65f6\u5148\u8be2\u95ee\u662f\u5426\u9700\u8981\u67e5\u8be2\u4f59\u989d\u3002\u901a\u8fc7\u53ea\u8bfb MCP \u5de5\u5177\u8fde\u63a5 SudoCode\uff0c\u8fd4\u56de\u8d26\u6237\u7ea7\u94b1\u5305\u4f59\u989d\u3001\u5957\u9910\u4f59\u989d\u548c\u603b\u4f59\u989d\u3002\u63d2\u4ef6\u4e0d\u80fd\u521b\u5efa Key\u3001\u6263\u8d39\u3001\u5145\u503c\u6216\u7ba1\u7406\u8d26\u6237\u3002",
     "developerName": "SudoCode",
     "category": "Productivity",
     "capabilities": [
       "mcp"
     ],
     "defaultPrompt": [
-      "查询我的 SudoCode 余额。"
+      "\u67e5\u8be2\u6211\u7684 SudoCode \u4f59\u989d\u3002"
     ],
     "brandColor": "#8B5CF6",
     "composerIcon": "./assets/logo.svg",
