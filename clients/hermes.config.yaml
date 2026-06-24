@@ -1,8 +1,0 @@
-mcp_servers:
-  sudocode-balance:
-    url: "https://api.sudocode.chat/mcp"
-    auth: oauth
-    tools:
-      include: [sudocode_balance]
-      resources: false
-      prompts: false
