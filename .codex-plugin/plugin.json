@@ -1,0 +1,20 @@
+{
+  "name": "sudocode-balance",
+  "version": "0.1.0",
+  "description": "Read your SudoCode account balance from Codex.",
+  "author": {
+    "name": "SudoCode"
+  },
+  "interface": {
+    "displayName": "SudoCode Balance",
+    "shortDescription": "Show your SudoCode balance in Codex.",
+    "longDescription": "Connects Codex to SudoCode through a read-only MCP tool that returns your account-level wallet and subscription balance.",
+    "developerName": "SudoCode",
+    "category": "Productivity",
+    "capabilities": [
+      "mcp"
+    ],
+    "defaultPrompt": "Check my SudoCode balance."
+  },
+  "mcpServers": "./.mcp.json"
+}
