@@ -1,20 +1,23 @@
 {
   "name": "sudocode-balance",
   "version": "0.1.0",
-  "description": "Read your SudoCode account balance from Codex.",
+  "description": "在 Codex 中查询你的 SudoCode 账户余额。",
   "author": {
     "name": "SudoCode"
   },
   "interface": {
     "displayName": "SudoCode Balance",
-    "shortDescription": "Show your SudoCode balance in Codex.",
-    "longDescription": "Connects Codex to SudoCode through a read-only MCP tool that returns your account-level wallet and subscription balance.",
+    "shortDescription": "在 Codex 中查看 SudoCode 余额。",
+    "longDescription": "通过只读 MCP 工具连接 SudoCode，返回账户级钱包余额、套餐余额和总余额。插件不能创建 Key、扣费、充值或管理账户。",
     "developerName": "SudoCode",
     "category": "Productivity",
     "capabilities": [
       "mcp"
     ],
-    "defaultPrompt": "Check my SudoCode balance."
+    "defaultPrompt": "查询我的 SudoCode 余额。",
+    "brandColor": "#8B5CF6",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg"
   },
   "mcpServers": "./.mcp.json"
 }
