@@ -1,0 +1,11 @@
+{
+  "name": "sudocode-balance",
+  "displayName": "SudoCode Balance",
+  "version": "0.1.0",
+  "description": "Balance-only SudoCode plugin for Claude Code.",
+  "author": {
+    "name": "SudoCode"
+  },
+  "repository": "https://github.com/b0bo000/sudocode-balance",
+  "mcpServers": "./.mcp.json"
+}

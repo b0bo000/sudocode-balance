@@ -1,0 +1,7 @@
+# Merge this into ~/.hermes/config.yaml or use it as a reference when running:
+# hermes mcp add sudocode-balance --url https://api.sudocode.chat/mcp --auth oauth
+
+mcp_servers:
+  sudocode-balance:
+    url: "https://api.sudocode.chat/mcp"
+    auth: oauth
