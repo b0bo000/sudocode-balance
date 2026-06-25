@@ -1,9 +1,6 @@
 {
-  "mcpServers": {
-    "sudocode-balance": {
-      "type": "http",
-      "url": "https://api.sudocode.chat/mcp",
-      "oauth_resource": "https://api.sudocode.chat/mcp"
-    }
+  "sudocode-balance": {
+    "type": "http",
+    "url": "https://api.sudocode.chat/mcp"
   }
 }

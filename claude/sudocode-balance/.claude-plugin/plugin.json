@@ -1,11 +1,13 @@
 {
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "sudocode-balance",
-  "displayName": "SudoCode Balance",
   "version": "0.1.0",
-  "description": "Balance-only SudoCode plugin for Claude Code.",
+  "description": "Read-only SudoCode balance MCP integration for Claude Code. Use only when the user explicitly asks for SudoCode wallet, package, or total balance.",
   "author": {
     "name": "SudoCode"
   },
-  "repository": "https://github.com/b0bo000/sudocode-balance",
-  "mcpServers": "./.mcp.json"
+  "homepage": "https://sudocode.chat/docs/mcp-balance",
+  "skills": [
+    "./skills/sudocode-balance"
+  ]
 }

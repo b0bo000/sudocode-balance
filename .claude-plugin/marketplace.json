@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "sudocode",
+  "description": "SudoCode Claude Code plugins and MCP integrations.",
+  "owner": {
+    "name": "SudoCode"
+  },
+  "plugins": [
+    {
+      "name": "sudocode-balance",
+      "description": "Read-only SudoCode balance MCP integration for Claude Code. It reports wallet balance, package balance, and total balance only when explicitly requested.",
+      "author": {
+        "name": "SudoCode"
+      },
+      "category": "productivity",
+      "source": "./claude/sudocode-balance",
+      "homepage": "https://sudocode.chat/docs/mcp-balance"
+    }
+  ]
+}
